@@ -161,17 +161,17 @@ ul li:last-child {
 
 .texture-swatch-1 {
   background: url(../img/kolya-korzh-6UsojuihFFA-unsplash.jpg);
-  max-width: 100%;
+  background-size: cover;
 }
 
 .texture-swatch-2 {
-  background: url(../img/victoria-wendish-06X7AIB00p8-unsplash.jpg) top left
-    repeat;
+  background: url(../img/victoria-wendish-06X7AIB00p8-unsplash.jpg);
+  background-size: cover;
 }
 
 .texture-swatch-3 {
-  background: url(../img/victoria-wendish-h5qIrTmDb5M-unsplash.jpg) top left
-    repeat;
+  background: url(../img/victoria-wendish-h5qIrTmDb5M-unsplash.jpg);
+  background-size: cover;
 }
 
 .texture-swatch-4 {
