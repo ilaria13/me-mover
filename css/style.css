@@ -74,10 +74,10 @@ footer {
   padding: calc(2 * var(--white-space));
 }
 
-header {
+/*header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-between;*/
 }
 
 .full-width {
