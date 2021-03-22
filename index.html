@@ -4,91 +4,87 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Style Tiles with CSS</title>
-    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/landingpage.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-    <div class="full-width header-wrapper">
+    <div class="full-width">
       <header>
-        <h1>LUMO</h1>
-        <h3>Style tile – Version 1</h3>
+        <div class="header-wrapper">
+          <img class="social_icon" src="img/icon_facebook.svg" alt="facebook icon"/>
+          <img class="social_icon" src="img/icon_linkedin.svg" alt="facebook icon"/>
+          <img class="social_icon" src="img/icon_website.svg" alt="facebook icon"/>
+        </div>
       </header>
-    </div>
 
     <main>
-      <div class="column">
-        <section class="swatches">
-          <h3 class="section-heading">Colour swatches</h3>
-          <ul class="swatchgrid">
-            <li class="color-swatch-1"></li>
-            <li class="color-swatch-2"></li>
-            <li class="color-swatch-3"></li>
-            <li class="color-swatch-4"></li>
-            <li class="color-swatch-5"></li>
-          </ul>
-        </section>
-        <section class="textures">
-          <h3 class="section-heading">Textures</h3>
-          <ul class="swatchgrid">
-            <li class="texture-swatch-1"></li>
-            <li class="texture-swatch-2"></li>
-            <li class="texture-swatch-3"></li>
-          </ul>
-        </section>
-        <section class="buttons">
-          <h3 class="section-heading">Buttons</h3>
-          <div>
-            <button type="button" class="primary-button">Button 1</button>
-            <button type="button" class="secondary-button">Button 2</button>
-          </div>
-        </section>
-      </div>
-      <!-- end .column -->
+   <div class="logo">
+     <img src="img/me-mover-logo.png" alt="logotype">
+   </div>
+    <section class="video_section">
+    <video id="videoBg" poster="img/video_cover.jpeg" controls>
+      <source src="img/me-mover_1minute.webm" type="video/mp4">
+    </video>
+    </section>
+    <div class="big_title"><h1>Become a Me-mover!</h1></div>
+    
+    <section class="form_section">
+      
+      <div class="form">
+  <h2>Schedule your fisrt free trial today!</h2>
+  <form autocomplete="on">
+    <p>
+      <label for="input_name"> Name* </label>
+      <input
+        id="input_name"
+        type="text"
+        name="name"
+        placeholder="Firstname Lastname"
+        required
+      />
+    </p>
+    <p>
+      <label for="input_email">E-mail*</label>
+      <input
+        id="input_email"
+        type="email"
+        name="email"
+        placeholder="name@mail.com"
+        required
+      />
+    </p>
 
-      <div class="column">
-        <section class="typography-main">
-          <h3 class="section-heading">Typography</h3>
-          <h1 class="h1-sample">
-            A sample header used mainly for big and short texts
-          </h1>
-          <p class="font-details-h1">
-            <span class="font-name">Casta</span>,
-            <span class="font-color">#black</span>
-          </p>
-          <h2 class="h2-sample">An example of a sub header</h2>
-          <p class="font-details-h2">
-            <span class="font-name">Karla</span>,
-            <span class="font-color">#black</span>
-          </p>
-          <p class="typography-sample">
-            This sample paragraph has
-            <em>emphasized parts</em>. Vestibulum tortor quam, feugiat vitae,
-            ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
-            egestas semper. Aenean ultricies mi vitae est. Mauris placerat
-            eleifend leo. Pellentesque habitant morbi tristique senectus et
-            netus et malesuada fames ac turpis egestas.
-          </p>
-          <p class="font-details-p">
-            <span class="font-name">Karla</span>,
-            <span class="font-color">#black</span>
-          </p>
-          <a href="#" class="typography-sample"
-            >This is an example of a text link.</a
-          >
-          <p class="font-details-a">
-            <span class="font-name">Karla</span>,
-            <span class="font-color">#black</span>
-          </p>
+    <p>
+      <label for="input_phone">Phone Number*</label>
+      <input id="input_phone" type="tel" placeholder="(999) 999-9999" />
+    </p>
 
-      </div>
-      <!-- end .column -->
-    </main>
+    <p>
+      <label for="input_datetime">Date and hour*</label>
+      <input
+        id="input_datetime"
+        type="datetime-local"
+        placeholder="dd/mm/yyyy, --:--"
+        name="data_time"
+        required
+      />
+    </p>
+    <button class="button_send">Send</button>
+  </form>
+</div>
+<div class="expert_review">
+  <h3>expert name</h3>
+</div>
+</section>
 
-    <div class="full-width">
+
+ <!-- end form and expert-->
+     
+
       <footer>
-        <p>Be creative - don't just use this template as is!</p>
+       
       </footer>
-    </div>
+    
   </body>
 </html>
